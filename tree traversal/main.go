@@ -22,7 +22,6 @@ func checkForDublicate(str string) bool {
 }
 
 func obhod(l pacet) {
-
 	if checkForDublicate(l.str) {
 		log.Fatal("ЕСТЬ ЦИКЛ")
 	}
@@ -32,7 +31,6 @@ func obhod(l pacet) {
 	for _, v := range l.ykazatel {
 		obhod(*v)
 	}
-
 }
 func main() {
 	var pacs [6]pacet
@@ -49,7 +47,3 @@ func main() {
 
 	fmt.Print("ЦИКЛЫ ОТСУТСТВУЮТ")
 }
-
-//git rm -r myfolder -f
-//git commit -m "myfolder is deleted"
-//git push
